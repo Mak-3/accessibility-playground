@@ -49,30 +49,15 @@ export default function ContrastChecker() {
               href="/"
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-              ← Back
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
             </Link>
             <div>
               <h1 className="text-2xl font-bold text-gray-900">
                 🎨 Contrast Ratio Checker
               </h1>
-              <p className="text-sm text-gray-600 mt-0.5">
-                Ensure your colors meet WCAG accessibility standards
-              </p>
             </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <Link 
-              href="/font-readability"
-              className="px-4 py-2 bg-purple-500 text-white hover:bg-purple-600 rounded-lg text-sm font-medium transition-colors"
-            >
-              Font Playground
-            </Link>
-            <Link 
-              href="/resources"
-              className="px-4 py-2 bg-green-500 text-white hover:bg-green-600 rounded-lg text-sm font-medium transition-colors"
-            >
-              📚 Resources
-            </Link>
           </div>
         </div>
       </header>

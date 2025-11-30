@@ -86,36 +86,15 @@ Remember that readability isn't just about the font itself—it's about the enti
               href="/"
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-              ← Back
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
             </Link>
             <div>
               <h1 className="text-2xl font-bold text-gray-900">
                 📖 Font & Readability Playground
               </h1>
-              <p className="text-sm text-gray-600 mt-0.5">
-                Experiment with typography settings for optimal readability
-              </p>
             </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <Link 
-              href="/contrast-checker"
-              className="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 rounded-lg text-sm font-medium transition-colors"
-            >
-              Contrast Checker
-            </Link>
-            <Link 
-              href="/resources"
-              className="px-4 py-2 bg-green-500 text-white hover:bg-green-600 rounded-lg text-sm font-medium transition-colors"
-            >
-              📚 Resources
-            </Link>
-            <button
-              onClick={handleReset}
-              className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium transition-colors"
-            >
-              🔄 Reset
-            </button>
           </div>
         </div>
       </header>

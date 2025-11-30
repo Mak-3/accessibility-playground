@@ -31,26 +31,6 @@ export default function ColorBlindnessVisualizer() {
               👁️ Color Blindness Visualizer
             </h1>
           </div>
-          <div className="flex items-center gap-3">
-            <Link 
-              href="/contrast-checker"
-              className="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 rounded-lg text-sm font-medium transition-colors"
-            >
-              Contrast Checker
-            </Link>
-            <Link 
-              href="/font-readability"
-              className="px-4 py-2 bg-purple-500 text-white hover:bg-purple-600 rounded-lg text-sm font-medium transition-colors"
-            >
-              Font Playground
-            </Link>
-            <Link 
-              href="/resources"
-              className="px-4 py-2 bg-green-500 text-white hover:bg-green-600 rounded-lg text-sm font-medium transition-colors"
-            >
-              📚 Resources
-            </Link>
-          </div>
         </div>
       </header>
 

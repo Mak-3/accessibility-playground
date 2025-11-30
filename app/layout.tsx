@@ -5,6 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://your-domain.com'),
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   title: {
     default: 'Accessibility Playground - Free WCAG Tools | Contrast Checker, Color Blindness Simulator & Font Readability',
     template: '%s | Accessibility Playground',
@@ -93,8 +98,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#3B82F6" />
         

@@ -289,6 +289,8 @@ export default function Home() {
             >
               Create beautiful, accessible websites that work for everyone. Test
               colors, contrast, typography, and more with our powerful tools.
+              Making things accessible is not optional. It's a must for every
+              user.
             </motion.p>
 
             <motion.div
@@ -623,71 +625,69 @@ export default function Home() {
               </p>
             </motion.div>
 
-             <motion.div
-               initial={{ opacity: 0, y: 50 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8 }}
-               viewport={{ once: true }}
-               className="flex justify-center mb-12"
-             >
-               <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 max-w-2xl w-full">
-                 <div className="flex items-start gap-6">
-                   <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                     <svg
-                       className="w-7 h-7 text-white"
-                       fill="none"
-                       stroke="currentColor"
-                       viewBox="0 0 24 24"
-                     >
-                       <path
-                         strokeLinecap="round"
-                         strokeLinejoin="round"
-                         strokeWidth={2}
-                         d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                       />
-                     </svg>
-                   </div>
-                   <div>
-                     <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                       Accessibility Handbook
-                     </h3>
-                     <p className="text-gray-600 mb-4 leading-relaxed">
-                       Comprehensive guide covering WCAG guidelines, best
-                       practices, and implementation strategies.
-                     </p>
-                     {/* Meta Info */}
-                     <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                       <span className="flex items-center gap-1">
-                         📄 52 pages
-                       </span>
-                       <span className="flex items-center gap-1">
-                         💾 5.5 MB
-                       </span>
-                     </div>
-                     <a
-                       href="/resources/AccessibilityHandbook.pdf"
-                       download="AccessibilityHandbook.pdf"
-                       className="text-blue-600 font-semibold hover:underline inline-flex items-center gap-2 hover:gap-3 transition-all"
-                     >
-                       Download PDF
-                       <svg
-                         className="w-4 h-4"
-                         fill="none"
-                         stroke="currentColor"
-                         viewBox="0 0 24 24"
-                       >
-                         <path
-                           strokeLinecap="round"
-                           strokeLinejoin="round"
-                           strokeWidth={2}
-                           d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                         />
-                       </svg>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="flex justify-center"
+            >
+              <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 max-w-2xl w-full">
+                <div className="flex items-start gap-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <svg
+                      className="w-7 h-7 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      Accessibility Handbook
+                    </h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Comprehensive guide covering WCAG guidelines, best
+                      practices, and implementation strategies.
+                    </p>
+                    {/* Meta Info */}
+                    <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
+                      <span className="flex items-center gap-1">
+                        📄 52 pages
+                      </span>
+                      <span className="flex items-center gap-1">💾 5.5 MB</span>
+                    </div>
+                    <a
+                      href="/resources/AccessibilityHandbook.pdf"
+                      download="AccessibilityHandbook.pdf"
+                      className="text-blue-600 hover:text-blue-800 underline flex items-center gap-2"
+                    >
+                      Download PDF
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -714,10 +714,11 @@ export default function Home() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="min-h-screen flex items-center py-16 sm:py-24 lg:py-32"
+          className="min-h-screen flex items-center justify-center py-16 sm:py-24 lg:py-32"
           aria-labelledby="contact-heading"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+            {/* Heading */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -731,11 +732,9 @@ export default function Home() {
               >
                 Get in Touch
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-                Have questions or feedback? I'd love to hear from you!
-              </p>
             </motion.div>
 
+            {/* Contact Card */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -744,191 +743,99 @@ export default function Home() {
               className="max-w-4xl mx-auto"
             >
               <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border border-gray-100">
-                <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-                  {/* Contact Info */}
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-8">
-                      Contact Information
-                    </h3>
+                {/* Intro */}
+                <div className="flex flex-col justify-center text-center sm:text-left mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Let's Connect!
+                  </h3>
+                  <p className="text-gray-600 text-base sm:text-lg">
+                    Feel free to reach out via email or connect with me on
+                    LinkedIn. I'd love to hear from you!
+                  </p>
+                </div>
 
-                    <div className="space-y-6">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <svg
-                            className="w-6 h-6 text-blue-600"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <div className="text-sm text-gray-500 mb-1">Name</div>
-                          <div className="font-semibold text-gray-900">
-                            Mohammed Abdullah Khan
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <svg
-                            className="w-6 h-6 text-purple-600"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="min-w-0">
-                          <div className="text-sm text-gray-500 mb-1">
-                            Email
-                          </div>
-                          <a
-                            href="mailto:mohammedabdullahkhan26523@gmail.com"
-                            className="font-semibold text-gray-900 hover:text-blue-600 transition-colors break-all text-sm sm:text-base"
-                          >
-                            mohammedabdullahkhan26523@gmail.com
-                          </a>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <svg
-                            className="w-6 h-6 text-pink-600"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                          </svg>
-                        </div>
-                        <div className="min-w-0">
-                          <div className="text-sm text-gray-500 mb-1">
-                            LinkedIn
-                          </div>
-                          <a
-                            href="https://www.linkedin.com/in/mohammed-abdullah-khan-7b82a31a5/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-semibold text-gray-900 hover:text-blue-600 transition-colors break-all text-sm sm:text-base"
-                          >
-                            linkedin.com/in/mohammed-abdullah-khan...
-                          </a>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <svg
-                            className="w-6 h-6 text-indigo-600"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                            />
-                          </svg>
-                        </div>
-                        <div className="min-w-0">
-                          <div className="text-sm text-gray-500 mb-1">
-                            Portfolio
-                          </div>
-                          <a
-                            href="https://www.mohammedabdullahkhan.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-semibold text-gray-900 hover:text-blue-600 transition-colors break-all text-sm sm:text-base"
-                          >
-                            mohammedabdullahkhan.com
-                          </a>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <svg
-                            className="w-6 h-6 text-gray-700"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                          </svg>
-                        </div>
-                        <div className="min-w-0">
-                          <div className="text-sm text-gray-500 mb-1">
-                            GitHub
-                          </div>
-                          <a
-                            href="https://github.com/Mak-3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-semibold text-gray-900 hover:text-blue-600 transition-colors text-sm sm:text-base"
-                          >
-                            github.com/Mak-3
-                          </a>
-                        </div>
-                      </div>
+                {/* Contact Info */}
+                <div className="space-y-6">
+                  {/* Email */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg
+                        className="w-6 h-6 text-purple-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-sm text-gray-500 mb-1">Email</div>
+                      <a
+                        href="mailto:mohammedabdullahkhan26523@gmail.com"
+                        className="font-semibold text-gray-900 hover:text-blue-600 transition-colors break-all text-sm sm:text-base"
+                      >
+                        mohammedabdullahkhan26523@gmail.com
+                      </a>
                     </div>
                   </div>
 
-                  {/* Quick Message */}
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-8">
-                      Send a Message
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Your Email
-                        </label>
-                        <input
-                          type="email"
-                          id="contact-email"
-                          name="email"
-                          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                          placeholder="you@example.com"
-                          aria-label="Your email address"
-                          aria-required="true"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Message
-                        </label>
-                        <textarea
-                          rows={6}
-                          id="contact-message"
-                          name="message"
-                          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
-                          placeholder="Your message..."
-                          aria-label="Your message"
-                          aria-required="true"
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300"
-                        aria-label="Send your message"
+                  {/* Portfolio */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg
+                        className="w-6 h-6 text-indigo-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                       >
-                        Send Message
-                      </button>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                        />
+                      </svg>
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-sm text-gray-500 mb-1">
+                        Portfolio
+                      </div>
+                      <a
+                        href="https://www.mohammedabdullahkhan.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-gray-900 hover:text-blue-600 transition-colors break-all text-sm sm:text-base"
+                      >
+                        mohammedabdullahkhan.com
+                      </a>
+                    </div>
+                  </div>
+                  {/* linkedin */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg
+                        className="w-6 h-6 text-pink-600"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                      </svg>
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-sm text-gray-500 mb-1">LinkedIn</div>
+                      <a
+                        href="https://www.linkedin.com/in/mohammed-abdullah-khan-7b82a31a5/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-gray-900 hover:text-blue-600 transition-colors break-all text-sm sm:text-base"
+                      >
+                        linkedin.com/in/mohammed-abdullah-khan...
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1033,12 +940,12 @@ export default function Home() {
                   </button>
                 </li>
                 <li>
-                  <Link
-                    href="/resources"
+                  <button
+                    onClick={() => scrollToSection("resources")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Resources
-                  </Link>
+                  </button>
                 </li>
                 <li>
                   <button
