@@ -1,0 +1,23 @@
+{
+  "name": "Color Accessibility Playground",
+  "short_name": "Accessibility Tools",
+  "description": "Free accessibility tools for testing color blindness, contrast ratios, and typography",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
+
